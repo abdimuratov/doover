@@ -93,99 +93,22 @@
             <div>Elastane</div>
           </b-col>
         </b-row>
-        <div class="product-card__info--similar">
-          <div class="product-card__info--similar__title">Similar to this item</div>
-          <div class="d-flex flex-row">
-            <div class="product-card__info--similar__item">
-              <img
-                src="/images/clothes/similar1.png"
-                alt
-                class="product-card__info--similar__item--image"
-              />
-              <div class="font-weight-bold">$95.00</div>
-              <div class="product-card__info--similar__item--description">Loose jeans lorem</div>
-              <i class="icon icon-favoriteWhite product-card__info--similar__item--favorite"></i>
-            </div>
-            <div class="product-card__info--similar__item">
-              <img
-                src="/images/clothes/similar2.png"
-                alt
-                class="product-card__info--similar__item--image"
-              />
-              <div class="font-weight-bold">$32.00</div>
-              <div class="product-card__info--similar__item--description">Trousers lorem ipsum</div>
-              <i class="icon icon-favoriteWhite product-card__info--similar__item--favorite"></i>
-            </div>
-            <div class="product-card__info--similar__item">
-              <img
-                src="/images/clothes/similar3.png"
-                alt
-                class="product-card__info--similar__item--image"
-              />
-              <div class="font-weight-bold">$123.00</div>
-              <div class="product-card__info--similar__item--description">Wide-leg trousers</div>
-              <i class="icon icon-favoriteWhite product-card__info--similar__item--favorite"></i>
-            </div>
-            <div class="product-card__info--similar__item">
-              <img
-                src="/images/clothes/similar4.png"
-                alt
-                class="product-card__info--similar__item--image"
-              />
-              <div class="font-weight-bold">$80.00</div>
-              <div class="product-card__info--similar__item--description">Knitwear trousers</div>
-              <i class="icon icon-favoriteWhite product-card__info--similar__item--favorite"></i>
-            </div>
-            <i class="icon icon-arrowRound product-card__info--similar__leftslider"></i>
-            <i class="icon icon-arrowRound product-card__info--similar__rightslider"></i>
-          </div>
-        </div>
+        <Similar />
       </div>
     </div>
-    <div class="product-suggestion">
-      <div class="product-suggestion__title">Other things</div>
-      <div>
-        <div class="product-suggestion__card">
-          <div class="product-suggestion__card--item">
-            <img src="/images/clothes/other1.png" alt />
-            <div class="font-weight-bold">$177.00</div>
-            <div>Jumpsuit</div>
-            <i class="icon icon-favoriteWhite product-suggestion__card--item__favorite"></i>
-          </div>
-          <div class="product-suggestion__card--item">
-            <img src="/images/clothes/other2.png" alt />
-            <div class="font-weight-bold">$108.00</div>
-            <div>Trousers with pleats</div>
-            <i class="icon icon-favoriteWhite product-suggestion__card--item__favorite"></i>
-          </div>
-          <div class="product-suggestion__card--item">
-            <img src="/images/clothes/other3.png" alt />
-            <div class="font-weight-bold">$68.00</div>
-            <div>Denim shorts with a belt</div>
-            <i class="icon icon-favoriteWhite product-suggestion__card--item__favorite"></i>
-          </div>
-          <div class="product-suggestion__card--item">
-            <img src="/images/clothes/other4.png" alt />
-            <div class="font-weight-bold">$89.00</div>
-            <div>Wide straight trousers</div>
-            <i class="icon icon-favoriteWhite product-suggestion__card--item__favorite"></i>
-          </div>
-          <div class="product-suggestion__card--item">
-            <img src="/images/clothes/other5.png" alt />
-            <div class="font-weight-bold">$106.00</div>
-            <div>Openwork vest</div>
-            <i class="icon icon-favoriteWhite product-suggestion__card--item__favorite"></i>
-          </div>
-          <i class="icon icon-arrowRound product-suggestion__card--leftslider"></i>
-          <i class="icon icon-arrowRound product-suggestion__card--rightslider"></i>
-        </div>
-      </div>
-    </div>
+    <Suggestion />
   </div>
 </template>
 
 <script>
+import Similar from "@/components/Similar.vue";
+import Suggestion from "@/components/Suggestion.vue";
+
 export default {
+  components: {
+    Similar,
+    Suggestion,
+  },
   data() {
     return {
       items: [
