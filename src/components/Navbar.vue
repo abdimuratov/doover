@@ -1,6 +1,6 @@
 <template>
   <b-navbar class="header" fixed="top">
-    <i class="icon icon-logo"></i>
+    <img src="../assets/images/logo.png" alt="">
     <div class="navbar-links">
       <b-navbar-brand href="#">Catalog</b-navbar-brand>
       <b-navbar-brand href="#">Collection</b-navbar-brand>
